@@ -10,15 +10,6 @@ npm run test-jenkins'''
 
       }
     }
-    stage('Deploy') {
-      steps {
-        nodejs('NodeJS') {
-          sh '''npm start &
-'''
-        }
-
-      }
-    }
   }
   environment {
     PORT = '3000'

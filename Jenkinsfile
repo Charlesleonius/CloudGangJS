@@ -12,7 +12,11 @@ npm run test-jenkins'''
     }
     stage('Deploy') {
       steps {
-        sh 'npm start'
+        nodejs('NodeJS') {
+          sh '''npm start
+'''
+        }
+
       }
     }
   }

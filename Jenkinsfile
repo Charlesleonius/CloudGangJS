@@ -21,6 +21,6 @@ npm run test-jenkins'''
     }
   }
   environment {
-    PORT = '80'
+    PORT = '3000'
   }
 }
